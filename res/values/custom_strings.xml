@@ -20,4 +20,6 @@
     <string name="monet_linear_lightness_title">Linear lightness</string>
     <string name="monet_linear_lightness_summary">Use a linear lightness scale</string>
     <string name="monet_chroma_factor_title">Chroma</string>
+    <string name="font_title">System fonts</string>
+    <string name="font_preview_card_content_description">Font Preview</string>
 </resources>
