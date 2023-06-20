@@ -17,11 +17,8 @@ import com.android.customization.model.iconpack.IconPackSectionController;
 import com.android.customization.model.iconshape.IconShapeManager;
 import com.android.customization.model.iconshape.IconShapeSectionController;
 import com.android.customization.model.mode.DarkModeSectionController;
-<<<<<<< HEAD
 import com.android.customization.model.mode.DarkModeSnapshotRestorer;
-=======
 import com.android.customization.model.theme.OverlayManagerCompat;
->>>>>>> b6aad8f3 (ThemePicker: Bring back fonts, icon pack, shape customization)
 import com.android.customization.model.themedicon.ThemedIconSectionController;
 import com.android.customization.model.themedicon.ThemedIconSwitchProvider;
 import com.android.customization.model.themedicon.domain.interactor.ThemedIconInteractor;
@@ -251,17 +248,6 @@ public final class DefaultCustomizationSections implements CustomizationSections
                         sectionNavigationController,
                         lifecycleOwner,
                         /* isRevampedUiEnabled= */ false));
-
-        // Lock screen quick affordances section.
-        sectionControllers.add(
-                new KeyguardQuickAffordanceSectionController(
-                        sectionNavigationController,
-                        mKeyguardQuickAffordancePickerInteractor,
-                        new ViewModelProvider(
-                                activity,
-                                mKeyguardQuickAffordancePickerViewModelFactory)
-                                .get(KeyguardQuickAffordancePickerViewModel.class),
-                        lifecycleOwner));
 
         // Icon pack selection section.
         sectionControllers.add(new IconPackSectionController(
